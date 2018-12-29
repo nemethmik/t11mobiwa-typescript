@@ -5,7 +5,7 @@ A mobile warehousing solution for SAP B1 using Design1st with React/TypeScript/M
 - **npx create-react-app t11mobiwa --typescript** 
 This project was bootstrapped with [Create React App, which supports TypeScript out of the box](https://reactjs.org/docs/static-type-checking.html#using-typescript-with-create-react-app)
 - Add ```<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">``` and ```<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">``` to public/index.html
-- **npm install @material-ui/core @material-ui/icons prop-types @types/prop-types** Prop Types was used in a number of Material UI examples, but I am not sure I am usig Prop Types at all. 
+- **npm install @material-ui/core @material-ui/icons prop-types @types/prop-types** Prop Types was used in a number of Material UI examples. 
 - **firebase login**
 - **firebase init**
 ```
@@ -46,6 +46,9 @@ i  Writing project information to .firebaserc...
 - **firebase deploy --only hosting**
 
 <img src="./public/mobiwadeployedonfirebase.png" width="25%"/>
+
+## Adding Firebase Support
+- **npm install firebase** for getting started with authentication. Firebase CLI was already installed.
 
 ## Available Scripts
 In the project directory, you can run:
