@@ -23,6 +23,7 @@ import AccountCircle from "@material-ui/icons/AccountCircle"
 import ThreeVerticalDotsIcon from "@material-ui/icons/MoreVert"
 import {withStyles, Theme, createStyles} from "@material-ui/core/styles"
 import firebase from "./t11reactivefbconfig"
+import {ReactFinalFormMaterialUIApp} from "./reactfinalformmaterialuiexample"
 
 type TAppBarStyleFields = {
   sectionDesktop: any,
@@ -205,6 +206,7 @@ class App extends React.Component<TAppProps,TAppState> {
           {fbUser.email && <p>{fbUser.email}</p>}
           {this.state.loginError.code && <p>{this.state.loginError.code} =  {this.state.loginError.message}</p>} 
         </div>
+        <ReactFinalFormMaterialUIApp/>
       </>
     )
   }

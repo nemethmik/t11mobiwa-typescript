@@ -1,6 +1,12 @@
 # t11mobiwa
 A mobile warehousing solution for SAP B1 using Design1st with React/TypeScript/Material-UI/PWA
 
+## Next Steps
+I have reviewed Foormik, Final Form and especially Final Form is awesome. I have added a working sample application **reactfinalformmaterialuiexample.tsx** and the the next step would be to improve/extend it using real Material UI components from the [codesandbox sample](https://codesandbox.io/s/n4rvznnw0p) 
+together with defining the data structures with react-define-form/TypeScript.
+In the meantime, however, I've reviewed React Hooks, and I am pretty sure that for mobile applications they are more than enough. So, now I'm going to rework the pixabayfinder using React Hooks.
+So this branch is put on hold now.
+
 ## Installation, Material UI Setup, Initial Deployment on Firebase Hosting
 - **npx create-react-app t11mobiwa --typescript** 
 This project was bootstrapped with [Create React App, which supports TypeScript out of the box](https://reactjs.org/docs/static-type-checking.html#using-typescript-with-create-react-app)
@@ -49,6 +55,15 @@ i  Writing project information to .firebaserc...
 
 ## Adding Firebase Support
 - **npm install firebase** for getting started with authentication. Firebase CLI was already installed.
+
+## Adding Material UI Final Forms
+I've created a branch addingmuiforms for experimenting with [React Final Forms](https://github.com/final-form/react-final-form) which is an integration of [Final Form](https://github.com/final-form) with React from the same author [Erik Rassmussen (Next Generation Forms with React Final Form)](https://www.youtube.com/watch?v=WoSzy-4mviQ).
+I watched a number of videos about Formik, but I picked Final Forms because of its cleaner [integration with Material UI](https://github.com/final-form/react-final-form#material-ui-10); the sample [on codesandbox](https://codesandbox.io/s/2z5y03y81r) was written by erikras himself, and works with the latest Material UI right away.
+[React Define Form](https://github.com/ForbesLindesay/define-form/tree/master/packages/react-define-form) is TypeScript package to create typed form data structures for Final Form, but it seems that it is abandoned by its author with a couple of issues. 
+[Final Form Material UI (FFMUI)](https://github.com/Deadly0/final-form-material-ui) is a binding written in TypeScript between FF and MUI. This is a very simple package very similar to what is available in the codesandbox demo from erikras. [Issue #4](https://github.com/Deadly0/final-form-material-ui/issues/4) is about a nice example.
+[Oliver Tassinari made a nice demo](https://codesandbox.io/s/9ywq085k9w) using the components from this project, but he didn't use the Select component either. Oliver used Grid to layout the elements, Typography, Paper and nice MUI Button components. I have [forked and extended this project on codesandbox](https://codesandbox.io/s/n4rvznnw0p) with a Select component, where the width was set with adding ```formControlProps={{ fullWidth: true }}``` to the Field. 
+
+- **npm install react-final-form final-form final-form-material-ui react-define-form**
 
 ## Available Scripts
 In the project directory, you can run:
